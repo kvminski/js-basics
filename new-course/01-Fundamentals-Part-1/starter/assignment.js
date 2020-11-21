@@ -78,8 +78,42 @@ if (language2 === 'english' && population2 < 50 && !isIsland2) {
     console.log(`${country} does not meet you criteria :(`);
 }
 
-*/
+// the switch statement
 
+const language = "polish";
+
+switch (language) {
+    case "chinese":
+    case "mandarin":
+        console.log("MOST number of native speakers!");
+        break;
+    case "spanish":
+        console.log("2nd place in number of native speakers");
+        break;
+    case "english":
+        console.log("3rd place");
+        break;
+    case "hindi":
+        console.log("number 4");
+        break;
+    case "arabic":
+        console.log("5th most spoken language");
+        break;
+    default:
+        console.log("Great language too!");
+}
+
+
+//the conditional (ternary) operator
+
+const population = 38;
+const country = 'Poland';
+
+const avgPopulation = population > 33 ? `${country}'s population is above average.` : `${country}'s population is below average.`;
+
+console.log(avgPopulation);
+console.log(`${country}'s population is ${population > 33 ? 'above' : 'below'} average.`)
+*/
 /*
 //////////////////////////////
 // Coding challenge #1
