@@ -170,4 +170,35 @@ if (teamDolphinsBonus2 > teamKoalasBonus2 && teamDolphinsBonus2 > 100) {
 } else {
     console.log("It seems that no any team has score higher than 100!")
 }
+
+
+//////////////////////////////
+// Coding challenge #4
+
+let bill;
+let tip;
+
+bill = 275;
+tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(tip);
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value was ${bill + tip}`);
+
+bill = 40;
+tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value was ${bill + tip}`);
+
+bill = 430;
+tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value was ${bill + tip}`);
+
+
+// bill = 275;
+// let tip;
+// if (50 <= bill <= 300) {
+//     tip = bill * 0.15;
+// } else {
+//     tip = bill * 0.2;
+// }
+// console.log(bill, tip, bill + tip);
+
 */
