@@ -108,4 +108,58 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 checkWinner(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins2, scoreKoalas2);
 
+//introduction to arrays
+
+const populations = [1393, 38, 328, 67];
+
+console.log(populations.length === 4);
+
+const percentageOfWorld1 = function (population) {
+    return (population / 7900) * 100;
+}
+
+const percentages = [
+    percentageOfWorld1(populations[0]),
+    percentageOfWorld1(populations[1]),
+    percentageOfWorld1(populations[2]),
+    percentageOfWorld1(populations[3])
+];
+
+console.log(percentages);
+
+//basic array operations
+
+const neighbours = ['Germany', 'Czech Republic', 'Slovakia', 'Lithuania', 'Ukraine', 'Russia', 'Belarus'];
+console.log(neighbours);
+neighbours.push('Utopia');
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
+
+// 23 > 32 ? console.log('xD') : console.log('dX');
+// neighbours.includes('Germany') === false ? console.log('Probably not a central European country :D') : console.log(); //was just checking something xD, ignore
+
+if (neighbours.includes('Germany') === false) { //could use ! - knew it :P
+    console.log('Probably not a central European country :D');
+}
+
+neighbours[neighbours.indexOf('Russia')] = 'Russian Federation';
+console.log(neighbours);
+
 */
+
+const calcTip = function (bill) {
+    const tip = bill >= 50 && bill <= 300 ? bill * .15 : bill * .2;
+    return tip;
+}
+
+console.log(calcTip(100));
+
+const bills = [125, 555, 44];
+console.log(bills);
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(tips);
+
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(total);
